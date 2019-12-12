@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/18f81f1081.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <title>User Details Page</title>
+</head>
+
+<body style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/91W5wBnDOUL._SL1500_.jpg');">
+    <div class="container">
+        <div class="jumbotron">
+            <header style="text-align: center;">
+                <a class="headerText" href="home.html" style="color: white;">Blog Central</a>
+            </header>
+        </div>
+        <main role="main" class="main-container">
+
+            <div class="topnav bg-secondary">
+                <div>
+                    <a class="nav-link" class="dropdown-toggle" data-toggle="dropdown" href="#">Sort By <i
+                            class="fas fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" onclick="">Newest First</a>
+                        <a class="dropdown-item" onclick="">Oldest First</a>
+                        <a class="dropdown-item" onclick="">Popularity</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="/userdetailspage.html">My Profile</a>
+                <div class="search-container">
+                    <form action="#">
+                        <input type="text" placeholder="Search" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="login-container">
+                    <a class="login-link" href="#">Login</a>
+                    <a class="login-link" href="#">Register</a>
+                </div>
+            </div>
+
+            <div class="user-row row">
+                <div class="col-md-4">
+                    <img class="user-pic-bloghome"
+                        src="https://cdn2.iconfinder.com/data/icons/circle-avatars-1/128/050_girl_avatar_profile_woman_suit_student_officer-512.png">
+                </div>
+                <div class="col-md-8 my-auto" style="text-align: center;">
+                    <h1>User 1</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 user-main">
+                    <article class="user-info">
+                        <h2 class="user-info-username">Member info</h2>
+                        <p class="user-info-details">
+                            <p id="firstname">First name: </p>
+                            <p id="lastname">Last name: </p>
+                            <p id="email">Email: </p>
+                            <p id="street">Street: </p>
+                            <p id="housenr">House nr: </p>
+                            <p id="city">City: </p>
+                            <p id="zip">Zip code: </p>
+                        </p>
+                        <br><br>
+                        <h2 class="user-options">Options</h2>
+                        <button class="btn btn-secondary edit-button">Edit profile</button>
+                        <button class="btn btn-danger delete-button">Delete profile</button>
+                    </article>
+                </div>
+                <aside class="col-md-4 blog-sidebar">
+                    <h4>Online users</h4>
+                    <ol>
+                        <li class="list-group-item d-flex">
+                            <img class="user-pic-sidebar"
+                                src="https://cdn2.iconfinder.com/data/icons/circle-avatars-1/128/050_girl_avatar_profile_woman_suit_student_officer-512.png">
+                            User1
+                        </li>
+
+                        <li class="list-group-item d-flex">
+                            <img class="user-pic-sidebar"
+                                src="https://image.freepik.com/vecteurs-libre/profil-avatar-homme-icone-ronde_24640-14044.jpg">
+                            User2
+                        </li>
+
+                        <li class="list-group-item d-flex">
+                            <img class="user-pic-sidebar"
+                                src="https://image.freepik.com/vecteurs-libre/profil-avatar-femme-icone-ronde_24640-14042.jpg">
+                            User3
+                        </li>
+                    </ol>
+
+                </aside>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
