@@ -164,3 +164,7 @@
              max-height: 20px;
              max-width: 20px;
          }
+
+         .edit-delete-buttons{
+             float:right
+         }
